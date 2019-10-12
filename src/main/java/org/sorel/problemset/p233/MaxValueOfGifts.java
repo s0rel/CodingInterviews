@@ -14,8 +14,8 @@ public class MaxValueOfGifts {
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                int left = i > 0 ? maxValue[i - 1][j] : 0;
-                int up = j > 0 ? maxValue[i][j - 1] : 0;
+                int left = j > 0 ? maxValue[i][j - 1] : 0;
+                int up = i > 0 ? maxValue[i - 1][j] : 0;
                 maxValue[i][j] += Math.max(left, up);
             }
         }

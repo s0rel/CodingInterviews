@@ -3,6 +3,10 @@ package org.sorel.problemset.p300;
 import org.sorel.structures.ListNode;
 
 public class LastNumberInCircle {
+    /*
+     * f(n, m) = 0, if n = 1
+     *         = [f(n - 1, m) + m] % n, if n > 1
+     */
     public int lastRemaining(int n, int m) {
         if (n < 1 || m < 1) {
             return -1;

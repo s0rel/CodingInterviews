@@ -16,7 +16,9 @@ public class NumberOfK {
     }
 
     private int getFirstK(int[] arr, int k) {
-        if (arr[0] > k || arr[arr.length - 1] < k) return -1;
+        if (arr[0] > k || arr[arr.length - 1] < k) {
+            return -1;
+        }
 
         int l = 0, r = arr.length - 1, m;
         while (l <= r) {

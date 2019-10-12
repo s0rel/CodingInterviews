@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class TestLeftRotateString {
     @Test
-    public void test01() {
+    public void test() {
         LeftRotateString sol = new LeftRotateString();
         String str = "abcdefg";
         int i = 2;
@@ -30,5 +30,9 @@ public class TestLeftRotateString {
         str = "abcdefg";
         i = 7;
         Assert.assertEquals("abcdefg", sol.leftRotateString(str, i));
+
+        str = "";
+        i = 0;
+        Assert.assertEquals("", sol.leftRotateString(str, i));
     }
 }

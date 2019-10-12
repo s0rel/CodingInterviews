@@ -22,8 +22,9 @@ public class QueueWithMax<T extends Comparable> {
     }
 
     public void pushBack(T value) {
-        while (!maxStack.isEmpty() && value.compareTo(maxStack.getLast().value) >= 0)
+        while (!maxStack.isEmpty() && value.compareTo(maxStack.getLast().value) >= 0) {
             maxStack.removeLast();
+        }
         InternalData<T> addData = new InternalData<>(value, currentIndex);
         maxStack.addLast(addData);
         dataStack.addLast(addData);
@@ -35,8 +36,9 @@ public class QueueWithMax<T extends Comparable> {
             return null;
         }
         InternalData<T> delData = dataStack.removeFirst();
-        if (delData.index == maxStack.getFirst().index)
+        if (delData.index == maxStack.getFirst().index) {
             maxStack.removeFirst();
+        }
         return delData.value;
     }
 

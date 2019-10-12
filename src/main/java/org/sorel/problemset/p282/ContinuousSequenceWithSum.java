@@ -1,16 +1,20 @@
 package org.sorel.problemset.p282;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ContinuousSequenceWithSum {
-    public void findContinuousSequence(int sum) {
+    public List<List<Integer>> findContinuousSequence(int sum) {
+        List<List<Integer>> res = new ArrayList<>();
         if (sum < 3) {
-            return;
+            return res;
         }
 
         int small = 1, big = 2, middle = sum >> 1;
         int curSum = small + big;
         while (small <= middle) {
             if (curSum == sum) {
-                printContinousSequence(small, big);
+                res.add(continousSequence(small, big));
                 big++;
                 curSum += big;
             } else if (curSum < sum) {
@@ -21,13 +25,14 @@ public class ContinuousSequenceWithSum {
                 small++;
             }
         }
+        return res;
     }
 
-    private void printContinousSequence(int small, int big) {
+    private List<Integer> continousSequence(int small, int big) {
+        List<Integer> res = new ArrayList<>();
         for (int i = small; i <= big; i++) {
-            System.out.print(i);
-            System.out.print(" ");
+            res.add(i);
         }
-        System.out.println();
+        return res;
     }
 }

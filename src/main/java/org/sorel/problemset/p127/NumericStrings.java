@@ -20,10 +20,7 @@ public class NumericStrings {
             }
             if (str.charAt(index) == 'e' || str.charAt(index) == 'E') {
                 index = scanInteger(str, index + 1);
-                if (index == str.length())
-                    return true;
-                else
-                    return false;
+                return index == str.length();
             }
             return false;
         } else {
@@ -40,7 +37,7 @@ public class NumericStrings {
         }
     }
 
-    public int scanInteger(String str, Integer index) {
+    private int scanInteger(String str, Integer index) {
         if (index >= str.length())
             return -1;
         if (str.charAt(index) == '+' || str.charAt(index) == '-')
@@ -49,7 +46,7 @@ public class NumericStrings {
             return scanUnsignedInteger(str, index);
     }
 
-    public int scanUnsignedInteger(String str, Integer index) {
+    private int scanUnsignedInteger(String str, Integer index) {
         int origin = index;
         while (str.charAt(index) >= '0' && str.charAt(index) <= '9') {
             index++;

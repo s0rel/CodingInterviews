@@ -8,8 +8,9 @@ public class ConstuctArray {
 
         int[] res = new int[arr.length];
         res[0] = 1;
-        for (int i = 1; i < res.length; i++)
+        for (int i = 1; i < res.length; i++) {
             res[i] = res[i - 1] * arr[i - 1];
+        }
         int temp = 1;
         for (int i = arr.length - 2; i >= 0; i--) {
             temp = temp * arr[i + 1];

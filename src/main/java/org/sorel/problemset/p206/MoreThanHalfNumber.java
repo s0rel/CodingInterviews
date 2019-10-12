@@ -1,5 +1,9 @@
 package org.sorel.problemset.p206;
 
+/*
+ * 遍历到下一个数字时，如果下一个数字和之前保存的数字相同，则次数加 1；如果不同，
+ * 次数减 1；如果次数为 0，需要保存下一个数字，并把次数设为 1。
+ */
 public class MoreThanHalfNumber {
     public int moreThanHalfNumber(int[] array) {
         if (array == null || array.length == 0) {

@@ -10,8 +10,8 @@ public class TwoNumbersWithSum {
             return res;
         }
 
-        int curSum = arr[0] + arr[arr.length - 1];
         int l = 0, r = arr.length - 1;
+        int curSum = arr[l] + arr[r];
         while (curSum != sum && l < r) {
             if (curSum > sum) {
                 r--;

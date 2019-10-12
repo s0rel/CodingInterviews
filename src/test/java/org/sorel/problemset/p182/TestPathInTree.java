@@ -22,8 +22,7 @@ public class TestPathInTree {
         root.right = new TreeNode(12);
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(7);
-        sol.findPath(root, 22);
-        System.out.println();
+        System.out.println(sol.findPath(root, 22));
     }
 
     @Test
@@ -34,8 +33,7 @@ public class TestPathInTree {
         root.right = new TreeNode(12);
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(7);
-        sol.findPath(root, 15);
-        System.out.println();
+        System.out.println(sol.findPath(root, 15));
     }
 
     @Test
@@ -46,8 +44,7 @@ public class TestPathInTree {
         root.left.left = new TreeNode(3);
         root.left.left.left = new TreeNode(2);
         root.left.left.left.left = new TreeNode(1);
-        sol.findPath(root, 15);
-        System.out.println();
+        System.out.println(sol.findPath(root, 15));
     }
 
     @Test
@@ -58,23 +55,20 @@ public class TestPathInTree {
         root.right.right = new TreeNode(3);
         root.right.right.right = new TreeNode(4);
         root.right.right.right.right = new TreeNode(5);
-        sol.findPath(root, 16);
-        System.out.println();
+        System.out.println(sol.findPath(root, 16));
     }
 
     @Test
     public void test05() {
         PathInTree sol = new PathInTree();
         TreeNode root = new TreeNode(1);
-        sol.findPath(root, 1);
-        System.out.println();
+        System.out.println(sol.findPath(root, 1));
     }
 
     @Test
     public void test06() {
         PathInTree sol = new PathInTree();
         TreeNode root = null;
-        sol.findPath(root, 0);
-        System.out.println();
+        System.out.println(sol.findPath(root, 0));
     }
 }

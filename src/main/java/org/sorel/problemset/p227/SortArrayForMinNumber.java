@@ -3,8 +3,11 @@ package org.sorel.problemset.p227;
 import java.util.Arrays;
 
 public class SortArrayForMinNumber {
-    public void minNumber(int[] nums) {
-        if (nums == null || nums.length == 0) return;
+    public String minNumber(int[] nums) {
+        StringBuilder res = new StringBuilder();
+        if (nums == null || nums.length == 0) {
+            return res.toString();
+        }
 
         int len = nums.length;
         String[] arr = new String[len];
@@ -13,10 +16,9 @@ public class SortArrayForMinNumber {
         }
 
         Arrays.sort(arr, (o1, o2) -> (o1 + o2).compareTo(o2 + o1));
-        StringBuilder res = new StringBuilder();
         for (String s : arr) {
             res.append(s);
         }
-        System.out.println(res.toString());
+        return res.toString();
     }
 }

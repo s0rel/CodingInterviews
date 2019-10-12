@@ -18,21 +18,18 @@ public class ContinousCards {
         }
 
         int idx = 1;
-        while (table[idx] == 0) {
+        while (table[idx] == 0) { // 找到最小的那张牌
             idx++;
         }
-        int king = table[0];
+        int cnt = table[0]; // 大小王的数量
         for (int i = idx; i < idx + 5; i++) {
-            if (i > 13) {
-                break;
-            }
             if (table[i] > 1) { // 处理对子的情况
                 return false;
             } else if (table[i] == 0) { // 用大小王替代
-                if (king == 0) {
+                if (cnt == 0) {
                     return false;
                 } else {
-                    king--;
+                    cnt--;
                 }
             }
         }

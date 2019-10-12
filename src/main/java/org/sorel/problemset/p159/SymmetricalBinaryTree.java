@@ -15,23 +15,23 @@ public class SymmetricalBinaryTree {
         queue.offer(root);
         queue.offer(root);
         while (!queue.isEmpty()) {
-            TreeNode temp1 = queue.poll();
-            TreeNode temp2 = queue.poll();
+            TreeNode node1 = queue.poll();
+            TreeNode node2 = queue.poll();
 
-            if (temp1 == null && temp2 == null) {
+            if (node1 == null && node2 == null) {
                 continue;
             }
-            if (temp1 == null || temp2 == null) {
+            if (node1 == null || node2 == null) {
                 return false;
             }
-            if (temp1.val != temp2.val) {
+            if (node1.val != node2.val) {
                 return false;
             }
 
-            queue.offer(temp1.left);
-            queue.offer(temp2.right);
-            queue.offer(temp1.right);
-            queue.offer(temp2.left);
+            queue.offer(node1.left);
+            queue.offer(node2.right);
+            queue.offer(node1.right);
+            queue.offer(node2.left);
         }
         return true;
     }
@@ -46,7 +46,6 @@ public class SymmetricalBinaryTree {
         if (root1.val != root2.val) {
             return false;
         }
-
         return isSymmetricalRecursively(root1.left, root2.right) && isSymmetricalRecursively(root1.right, root2.left);
     }
 }

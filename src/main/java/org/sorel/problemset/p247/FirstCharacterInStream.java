@@ -14,10 +14,11 @@ public class FirstCharacterInStream {
         }
 
         public void insert(char ch) {
-            if (times[ch] == -1)
+            if (times[ch] == -1) {
                 times[ch] = index;
-            else
+            } else {
                 times[ch] = -2;
+            }
             index++;
         }
 

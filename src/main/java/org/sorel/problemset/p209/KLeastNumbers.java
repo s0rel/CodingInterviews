@@ -71,7 +71,9 @@ public class KLeastNumbers {
         while (true) {
             while (i < r && arr[++i] < v) ;
             while (j > 0 && v < arr[--j]) ;
-            if (i >= j) break;
+            if (i >= j) {
+                break;
+            }
             swap(arr, i, j);
         }
         swap(arr, l, j);

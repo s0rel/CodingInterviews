@@ -16,9 +16,9 @@ public class DigitsInSequence {
             boundNum *= 10;
             length++;
         }
-        int addNum = (idx - currIdx) / length;
-        int curNum = boundNum + addNum;
-        return Integer.toString(curNum).charAt(idx - currIdx - addNum * length) - '0';
+        int offset = (idx - currIdx) / length;
+        int prevNum = boundNum + offset; // 实际上得到的是前一个数字
+        return Integer.toString(prevNum).charAt(idx - currIdx - offset * length) - '0';
     }
 
     private int lengthSum(int length) {

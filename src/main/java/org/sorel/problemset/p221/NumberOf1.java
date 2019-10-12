@@ -6,17 +6,21 @@ public class NumberOf1 {
             return 0;
         }
 
+        int curr = 0, prev = 0, post = 0;
         int cnt = 0;
-        for (int i = 1; i <= n; i *= 10) {
-            cnt += (n / (10 * i)) * i;
-            int mod = n % (10 * i);
-            if (mod > 2 * i - 1) {
-                cnt += i;
-            } else {
-                if (mod >= i) {
-                    cnt += (mod - i) + 1;
-                }
+        int i = 1;
+        while (n / i != 0) {
+            curr = (n / i) % 10; // 当前位
+            prev = n / (i * 10); // 高位
+            post = n - (n / i) * i; // 低位
+            if (curr == 0) {
+                cnt += prev * i;
+            } else if (curr == 1) {
+                cnt = cnt + prev * i + post + 1;
+            } else if (curr > 1) {
+                cnt = cnt + (prev + 1) * i;
             }
+            i = i * 10;
         }
         return cnt;
     }

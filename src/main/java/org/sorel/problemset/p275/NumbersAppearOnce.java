@@ -1,16 +1,22 @@
 package org.sorel.problemset.p275;
 
+/*
+ * 由于两个数字肯定不一样，那么异或的结果肯定不为 0。在结果数字中找到第一个为 1 的位的位置，
+ * 记为第 n 位。可以把第 n 位是不是 1 为标准把数组中的数字分成两个子数组。
+ */
 public class NumbersAppearOnce {
     public int[] findNumsAppearOnce(int[] arr) {
-        int result = 0;
+        int sum = 0;
         for (int val : arr) {
-            result ^= val;
+            sum ^= val;
         }
-        int indexOf1 = findFirstBit1(result);
+
+        int indexOf1 = findFirstBit1(sum);
         int[] res = new int[]{0, 0};
         if (indexOf1 < 0) {
             return res;
         }
+
         for (int val : arr) {
             if ((val & indexOf1) == 0) {
                 res[0] ^= val;
@@ -25,13 +31,14 @@ public class NumbersAppearOnce {
         if (num < 0) {
             return -1;
         }
+
         int indexOf1 = 1;
         while (num != 0) {
             if ((num & 1) == 1) {
                 return indexOf1;
             } else {
-                num = num >> 1;
-                indexOf1 *= 2;
+                num >>= 1;
+                indexOf1 <<= 1;
             }
         }
         return -1;
