@@ -1,5 +1,7 @@
 package org.sorel.problemset.p263;
 
+import java.util.Arrays;
+
 public class NumberOfK {
     public int getNumberOfK(int[] arr, int k) {
         if (arr == null || arr.length == 0) {
@@ -57,5 +59,25 @@ public class NumberOfK {
             }
         }
         return -1;
+    }
+
+    public int getNumberOfK_(int[] arr, int k) {
+        int idx = Arrays.binarySearch(arr, k);
+        if (idx < 0) {
+            return 0;
+        }
+
+        int cnt = 1;
+        for (int i = idx + 1; i < arr.length; i++) {
+            if (arr[i] == k) {
+                cnt++;
+            }
+        }
+        for (int i = idx - 1; i >= 0; i--) {
+            if (arr[i] == k) {
+                cnt++;
+            }
+        }
+        return cnt;
     }
 }

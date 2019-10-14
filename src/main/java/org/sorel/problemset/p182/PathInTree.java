@@ -17,7 +17,8 @@ public class PathInTree {
         return res;
     }
 
-    private void findPath(TreeNode node, List<Integer> path, List<List<Integer>> res, int exceptedSum, int currentSum) {
+    private void findPath(TreeNode node, List<Integer> path, List<List<Integer>> res,
+                          int exceptedSum, int currentSum) {
         path.add(node.val);
         currentSum += node.val;
         if (node.left != null) {

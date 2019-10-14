@@ -2,9 +2,27 @@ package org.sorel.problemset.p209;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class KLeastNumbers {
     public List<Integer> getLeastNumbers(int[] arr, int k) {
+        List<Integer> res = new ArrayList<>();
+        if (arr == null || arr.length == 0 || k <= 0 || k > arr.length) {
+            return res;
+        }
+
+        PriorityQueue<Integer> queue = new PriorityQueue<>(k);
+        for (int val : arr) {
+            queue.add(val);
+        }
+        while (k != 0) {
+            res.add(queue.remove());
+            k--;
+        }
+        return res;
+    }
+
+    public List<Integer> getLeastNumbersHeap(int[] arr, int k) {
         List<Integer> res = new ArrayList<>();
         if (arr == null || arr.length == 0 || k <= 0 || k > arr.length) {
             return res;

@@ -1,40 +1,47 @@
 package org.sorel.problemset.p161;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrintMatrix {
-    public void printMatrix(int[][] matrix) {
+    public List<Integer> printMatrix(int[][] matrix) {
+        List<Integer> res = new ArrayList<>();
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
-            return;
+            return res;
         }
 
-        int start = 0, row = matrix.length, col = matrix[0].length;
-        while (start * 2 < row && start * 2 < col) {
-            printMatrixInCircle(matrix, start);
-            start++;
-        }
-        System.out.println();
-    }
+        int down = 0;
+        int up = matrix.length - 1;
+        int left = 0;
+        int right = matrix[0].length - 1;
+        while (down <= up && left <= right) {
+            for (int i = left; i <= right; i++) {
+                res.add(matrix[down][i]);
+            }
 
-    private void printMatrixInCircle(int[][] matrix, int start) {
-        int row = matrix.length, col = matrix[0].length;
-        int endX = col - 1 - start, endY = row - 1 - start;
+            for (int i = down + 1; i <= up; i++) {
+                res.add(matrix[i][right]);
+            }
 
-        for (int i = start; i <= endX; i++) {
-            System.out.print(matrix[start][i] + " ");
-        }
-        if (start < endY) {
-            for (int i = start + 1; i <= endY; i++) {
-                System.out.print(matrix[i][endX] + " ");
+            //向左 有可能出现特殊的情况只有一列，为了避免重复访问
+            if (down < up) {
+                for (int i = right - 1; i >= left; i--) {
+                    res.add(matrix[up][i]);
+                }
             }
-        }
-        if (start < endX && start < endY) {
-            for (int i = endX - 1; i >= start; i--) {
-                System.out.print(matrix[endY][i] + " ");
+
+            //向上 有可能出现特殊的情况只有一行，为了避免重复访问
+            if (left < right) {
+                for (int i = up - 1; i >= down + 1; i--) {
+                    res.add(matrix[i][left]);
+                }
             }
+
+            down++;
+            up--;
+            left++;
+            right--;
         }
-        if (start < endX && start < endY - 1) {
-            for (int i = endY - 1; i >= start + 1; i--) {
-                System.out.print(matrix[i][start] + " ");
-            }
-        }
+        return res;
     }
 }

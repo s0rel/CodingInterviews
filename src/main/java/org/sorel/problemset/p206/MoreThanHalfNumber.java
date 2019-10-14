@@ -5,20 +5,20 @@ package org.sorel.problemset.p206;
  * 次数减 1；如果次数为 0，需要保存下一个数字，并把次数设为 1。
  */
 public class MoreThanHalfNumber {
-    public int moreThanHalfNumber(int[] array) {
-        if (array == null || array.length == 0) {
+    public int moreThanHalfNumber(int[] arr) {
+        if (arr == null || arr.length == 0) {
             return 0;
         }
 
-        int num = array[0], cnt = 1, len = array.length;
+        int num = arr[0], cnt = 1, len = arr.length;
         for (int i = 1; i < len; i++) {
             if (cnt == 0) {
-                num = array[i];
+                num = arr[i];
                 cnt = 1;
                 continue;
             }
 
-            if (array[i] == num) {
+            if (arr[i] == num) {
                 cnt++;
             } else {
                 cnt--;
@@ -27,7 +27,7 @@ public class MoreThanHalfNumber {
 
         // 检查 num 的出现次数是否超过一半
         cnt = 0;
-        for (int value : array) {
+        for (int value : arr) {
             if (value == num) {
                 cnt++;
             }

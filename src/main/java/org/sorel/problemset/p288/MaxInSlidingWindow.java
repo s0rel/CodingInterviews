@@ -49,7 +49,7 @@ public class MaxInSlidingWindow {
         }
 
         int len = arr.length;
-        for (int i = 0; i <= len - size ; i++) {
+        for (int i = 0; i <= len - size; i++) {
             int max = arr[i];
             for (int j = i + 1; j < i + size; j++) {
                 if (arr[j] > max) {

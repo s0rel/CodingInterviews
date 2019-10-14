@@ -23,84 +23,84 @@ public class TestPrintMatrix {
     public void test01() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = {{1}};
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test02() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(2, 2);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test03() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(4, 4);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test04() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(5, 5);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test05() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(5, 1);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test06() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(5, 2);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test07() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(5, 3);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test08() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(5, 4);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test09() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(1, 5);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test10() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(2, 5);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test11() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(3, 5);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     @Test
     public void test12() {
         PrintMatrix sol = new PrintMatrix();
         int[][] matrix = helper(4, 5);
-        sol.printMatrix(matrix);
+        System.out.println(sol.printMatrix(matrix));
     }
 
     private int[][] helper(int row, int col) {

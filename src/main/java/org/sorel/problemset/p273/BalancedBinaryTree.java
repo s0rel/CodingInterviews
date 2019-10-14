@@ -10,7 +10,7 @@ public class BalancedBinaryTree {
         return isBalanced(root, new int[]{0});
     }
 
-    private static boolean isBalanced(TreeNode node, int[] depth) {
+    private boolean isBalanced(TreeNode node, int[] depth) {
         if (node == null) {
             depth[0] = 0;
             return true;
