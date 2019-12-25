@@ -1,6 +1,6 @@
 package org.sorel.problemset.p161;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class TestPrintMatrix {
     @Test

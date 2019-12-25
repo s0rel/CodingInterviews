@@ -1,7 +1,7 @@
 package org.sorel.problemset.p145;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.sorel.structures.ListNode;
 
 public class TestMergeSortedLists {
@@ -82,6 +82,6 @@ public class TestMergeSortedLists {
         ListNode h1 = null;
         ListNode h2 = null;
         ListNode res = sol.merge(h1, h2);
-        Assert.assertNull(res);
+        Assertions.assertNull(res);
     }
 }

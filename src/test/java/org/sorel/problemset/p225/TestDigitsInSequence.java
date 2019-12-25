@@ -1,20 +1,20 @@
 package org.sorel.problemset.p225;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestDigitsInSequence {
     @Test
     public void test() {
         DigitsInSequence sol = new DigitsInSequence();
-        Assert.assertEquals(0, sol.digitAtIndex(0));
-        Assert.assertEquals(1, sol.digitAtIndex(1));
-        Assert.assertEquals(9, sol.digitAtIndex(9));
-        Assert.assertEquals(1, sol.digitAtIndex(10));
-        Assert.assertEquals(9, sol.digitAtIndex(189));
-        Assert.assertEquals(1, sol.digitAtIndex(190));
-        Assert.assertEquals(3, sol.digitAtIndex(1000));
-        Assert.assertEquals(7, sol.digitAtIndex(1001));
-        Assert.assertEquals(0, sol.digitAtIndex(1002));
+        Assertions.assertEquals(0, sol.digitAtIndex(0));
+        Assertions.assertEquals(1, sol.digitAtIndex(1));
+        Assertions.assertEquals(9, sol.digitAtIndex(9));
+        Assertions.assertEquals(1, sol.digitAtIndex(10));
+        Assertions.assertEquals(9, sol.digitAtIndex(189));
+        Assertions.assertEquals(1, sol.digitAtIndex(190));
+        Assertions.assertEquals(3, sol.digitAtIndex(1000));
+        Assertions.assertEquals(7, sol.digitAtIndex(1001));
+        Assertions.assertEquals(0, sol.digitAtIndex(1002));
     }
 }

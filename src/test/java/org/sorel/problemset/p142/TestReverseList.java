@@ -1,7 +1,7 @@
 package org.sorel.problemset.p142;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.sorel.structures.ListNode;
 
 public class TestReverseList {
@@ -44,6 +44,6 @@ public class TestReverseList {
     public void test03() {
         ReverseList sol = new ReverseList();
         ListNode head = null;
-        Assert.assertNull(sol.reverseList(head));
+        Assertions.assertNull(sol.reverseList(head));
     }
 }

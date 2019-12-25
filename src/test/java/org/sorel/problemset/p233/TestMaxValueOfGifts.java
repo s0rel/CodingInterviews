@@ -1,7 +1,7 @@
 package org.sorel.problemset.p233;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestMaxValueOfGifts {
     @Test
@@ -22,7 +22,7 @@ public class TestMaxValueOfGifts {
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        Assert.assertEquals(29, sol.getMaxVaule(matrix));
+        Assertions.assertEquals(29, sol.getMaxVaule(matrix));
     }
 
     @Test
@@ -34,7 +34,7 @@ public class TestMaxValueOfGifts {
                 {5, 7, 4, 11},
                 {3, 7, 16, 5}
         };
-        Assert.assertEquals(53, sol.getMaxVaule(matrix));
+        Assertions.assertEquals(53, sol.getMaxVaule(matrix));
     }
 
     @Test
@@ -43,7 +43,7 @@ public class TestMaxValueOfGifts {
         int[][] matrix = {
                 {1, 10, 3, 8}
         };
-        Assert.assertEquals(22, sol.getMaxVaule(matrix));
+        Assertions.assertEquals(22, sol.getMaxVaule(matrix));
     }
 
     @Test
@@ -55,7 +55,7 @@ public class TestMaxValueOfGifts {
                 {5},
                 {3}
         };
-        Assert.assertEquals(21, sol.getMaxVaule(matrix));
+        Assertions.assertEquals(21, sol.getMaxVaule(matrix));
     }
 
     @Test
@@ -64,13 +64,13 @@ public class TestMaxValueOfGifts {
         int[][] matrix = {
                 {3}
         };
-        Assert.assertEquals(3, sol.getMaxVaule(matrix));
+        Assertions.assertEquals(3, sol.getMaxVaule(matrix));
     }
 
     @Test
     public void test06() {
         MaxValueOfGifts sol = new MaxValueOfGifts();
         int[][] matrix = null;
-        Assert.assertEquals(0, sol.getMaxVaule(matrix));
+        Assertions.assertEquals(0, sol.getMaxVaule(matrix));
     }
 }

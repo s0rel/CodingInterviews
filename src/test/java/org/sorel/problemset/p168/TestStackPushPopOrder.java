@@ -1,7 +1,7 @@
 package org.sorel.problemset.p168;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestStackPushPopOrder {
     @Test
@@ -20,7 +20,7 @@ public class TestStackPushPopOrder {
         StackPushPopOrder sol = new StackPushPopOrder();
         int[] push = {1, 2, 3, 4, 5};
         int[] pop = {4, 5, 3, 2, 1};
-        Assert.assertTrue(sol.isPopOrder(push, pop));
+        Assertions.assertTrue(sol.isPopOrder(push, pop));
     }
 
     @Test
@@ -28,7 +28,7 @@ public class TestStackPushPopOrder {
         StackPushPopOrder sol = new StackPushPopOrder();
         int[] push = {1, 2, 3, 4, 5};
         int[] pop = {3, 5, 4, 2, 1};
-        Assert.assertTrue(sol.isPopOrder(push, pop));
+        Assertions.assertTrue(sol.isPopOrder(push, pop));
     }
 
     @Test
@@ -36,7 +36,7 @@ public class TestStackPushPopOrder {
         StackPushPopOrder sol = new StackPushPopOrder();
         int[] push = {1, 2, 3, 4, 5};
         int[] pop = {4, 3, 5, 1, 2};
-        Assert.assertFalse(sol.isPopOrder(push, pop));
+        Assertions.assertFalse(sol.isPopOrder(push, pop));
     }
 
     @Test
@@ -44,7 +44,7 @@ public class TestStackPushPopOrder {
         StackPushPopOrder sol = new StackPushPopOrder();
         int[] push = {1, 2, 3, 4, 5};
         int[] pop = {3, 5, 4, 1, 2};
-        Assert.assertFalse(sol.isPopOrder(push, pop));
+        Assertions.assertFalse(sol.isPopOrder(push, pop));
     }
 
     @Test
@@ -52,7 +52,7 @@ public class TestStackPushPopOrder {
         StackPushPopOrder sol = new StackPushPopOrder();
         int[] push = {1};
         int[] pop = {2};
-        Assert.assertFalse(sol.isPopOrder(push, pop));
+        Assertions.assertFalse(sol.isPopOrder(push, pop));
     }
 
     @Test
@@ -60,7 +60,7 @@ public class TestStackPushPopOrder {
         StackPushPopOrder sol = new StackPushPopOrder();
         int[] push = {1};
         int[] pop = {1};
-        Assert.assertTrue(sol.isPopOrder(push, pop));
+        Assertions.assertTrue(sol.isPopOrder(push, pop));
     }
 
     @Test
@@ -68,6 +68,6 @@ public class TestStackPushPopOrder {
         StackPushPopOrder sol = new StackPushPopOrder();
         int[] push = null;
         int[] pop = null;
-        Assert.assertTrue(sol.isPopOrder(push, pop));
+        Assertions.assertTrue(sol.isPopOrder(push, pop));
     }
 }

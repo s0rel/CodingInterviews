@@ -1,7 +1,8 @@
 package org.sorel.problemset.p039;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestDuplicationInArray_I {
     @Test
@@ -17,34 +18,34 @@ public class TestDuplicationInArray_I {
     public void test01() {
         DuplicationInArray_I sol = new DuplicationInArray_I();
         int[] arr = {2, 1, 3, 1, 4};
-        Assert.assertEquals(1, sol.findDuplicateNumber(arr));
+        Assertions.assertEquals(1, sol.findDuplicateNumber(arr));
     }
 
     @Test
     public void test02() {
         DuplicationInArray_I sol = new DuplicationInArray_I();
         int[] arr = {2, 4, 3, 1, 4};
-        Assert.assertEquals(4, sol.findDuplicateNumber(arr));
+        Assertions.assertEquals(4, sol.findDuplicateNumber(arr));
     }
 
     @Test
     public void test03() {
         DuplicationInArray_I sol = new DuplicationInArray_I();
         int[] arr = {2, 4, 2, 1, 4};
-        Assert.assertEquals(2, sol.findDuplicateNumber(arr));
+        Assertions.assertEquals(2, sol.findDuplicateNumber(arr));
     }
 
     @Test
     public void test04() {
         DuplicationInArray_I sol = new DuplicationInArray_I();
         int[] arr = {2, 1, 3, 0, 4};
-        Assert.assertEquals(-1, sol.findDuplicateNumber(arr));
+        Assertions.assertEquals(-1, sol.findDuplicateNumber(arr));
     }
 
     @Test
     public void test05() {
         DuplicationInArray_I sol = new DuplicationInArray_I();
         int[] arr = null;
-        Assert.assertEquals(-1, sol.findDuplicateNumber(arr));
+        Assertions.assertEquals(-1, sol.findDuplicateNumber(arr));
     }
 }

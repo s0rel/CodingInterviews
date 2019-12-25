@@ -1,7 +1,7 @@
 package org.sorel.problemset.p044;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestFindInPartiallySortedMatrix {
     @Test
@@ -20,7 +20,7 @@ public class TestFindInPartiallySortedMatrix {
         FindInPartiallySortedMatrix sol = new FindInPartiallySortedMatrix();
         int[][] matrix = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
         int n = 7;
-        Assert.assertTrue(sol.searchIn2DArray(matrix, n));
+        Assertions.assertTrue(sol.searchIn2DArray(matrix, n));
     }
 
     @Test
@@ -28,7 +28,7 @@ public class TestFindInPartiallySortedMatrix {
         FindInPartiallySortedMatrix sol = new FindInPartiallySortedMatrix();
         int[][] matrix = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
         int n = 5;
-        Assert.assertFalse(sol.searchIn2DArray(matrix, n));
+        Assertions.assertFalse(sol.searchIn2DArray(matrix, n));
     }
 
     @Test
@@ -36,7 +36,7 @@ public class TestFindInPartiallySortedMatrix {
         FindInPartiallySortedMatrix sol = new FindInPartiallySortedMatrix();
         int[][] matrix = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
         int n = 1;
-        Assert.assertTrue(sol.searchIn2DArray(matrix, n));
+        Assertions.assertTrue(sol.searchIn2DArray(matrix, n));
     }
 
     @Test
@@ -44,7 +44,7 @@ public class TestFindInPartiallySortedMatrix {
         FindInPartiallySortedMatrix sol = new FindInPartiallySortedMatrix();
         int[][] matrix = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
         int n = 15;
-        Assert.assertTrue(sol.searchIn2DArray(matrix, n));
+        Assertions.assertTrue(sol.searchIn2DArray(matrix, n));
     }
 
     @Test
@@ -52,7 +52,7 @@ public class TestFindInPartiallySortedMatrix {
         FindInPartiallySortedMatrix sol = new FindInPartiallySortedMatrix();
         int[][] matrix = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
         int n = 0;
-        Assert.assertFalse(sol.searchIn2DArray(matrix, n));
+        Assertions.assertFalse(sol.searchIn2DArray(matrix, n));
     }
 
     @Test
@@ -60,7 +60,7 @@ public class TestFindInPartiallySortedMatrix {
         FindInPartiallySortedMatrix sol = new FindInPartiallySortedMatrix();
         int[][] matrix = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};
         int n = 16;
-        Assert.assertFalse(sol.searchIn2DArray(matrix, n));
+        Assertions.assertFalse(sol.searchIn2DArray(matrix, n));
     }
 
     @Test
@@ -68,6 +68,6 @@ public class TestFindInPartiallySortedMatrix {
         FindInPartiallySortedMatrix sol = new FindInPartiallySortedMatrix();
         int[][] matrix = null;
         int n = 16;
-        Assert.assertFalse(sol.searchIn2DArray(matrix, n));
+        Assertions.assertFalse(sol.searchIn2DArray(matrix, n));
     }
 }

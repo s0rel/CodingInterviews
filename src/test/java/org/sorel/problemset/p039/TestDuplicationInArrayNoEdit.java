@@ -1,13 +1,13 @@
 package org.sorel.problemset.p039;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestDuplicationInArrayNoEdit {
     @Test
     public void test() {
         DuplicationInArrayNoEdit sol = new DuplicationInArrayNoEdit();
         int[] arr = {1, 2, 3, 2};
-        Assert.assertEquals(2, sol.findDuplicateNumber(arr));
+        Assertions.assertEquals(2, sol.findDuplicateNumber(arr));
     }
 }

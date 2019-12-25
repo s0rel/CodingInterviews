@@ -1,7 +1,7 @@
 package org.sorel.problemset.p263;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestNumberOfK {
     @Test
@@ -24,7 +24,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {1, 2, 3, 3, 3, 3, 4, 5};
         int k = 3;
-        Assert.assertEquals(4, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(4, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -32,7 +32,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {3, 3, 3, 3, 4, 5};
         int k = 3;
-        Assert.assertEquals(4, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(4, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -40,7 +40,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {1, 2, 3, 3, 3, 3};
         int k = 3;
-        Assert.assertEquals(4, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(4, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -48,7 +48,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {1, 3, 3, 3, 3, 4, 5};
         int k = 2;
-        Assert.assertEquals(0, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(0, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -56,7 +56,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {1, 3, 3, 3, 3, 4, 5};
         int k = 0;
-        Assert.assertEquals(0, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(0, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -64,7 +64,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {1, 3, 3, 3, 3, 4, 5};
         int k = 6;
-        Assert.assertEquals(0, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(0, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -72,7 +72,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {3, 3, 3, 3};
         int k = 3;
-        Assert.assertEquals(4, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(4, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -80,7 +80,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {3, 3, 3, 3};
         int k = 4;
-        Assert.assertEquals(0, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(0, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -88,7 +88,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {3};
         int k = 3;
-        Assert.assertEquals(1, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(1, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -96,7 +96,7 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = {3};
         int k = 4;
-        Assert.assertEquals(0, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(0, sol.getNumberOfK(data, k));
     }
 
     @Test
@@ -104,6 +104,6 @@ public class TestNumberOfK {
         NumberOfK sol = new NumberOfK();
         int[] data = null;
         int k = 0;
-        Assert.assertEquals(0, sol.getNumberOfK(data, k));
+        Assertions.assertEquals(0, sol.getNumberOfK(data, k));
     }
 }

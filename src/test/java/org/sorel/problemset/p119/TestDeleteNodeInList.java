@@ -1,7 +1,7 @@
 package org.sorel.problemset.p119;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.sorel.structures.ListNode;
 
 public class TestDeleteNodeInList {
@@ -23,7 +23,7 @@ public class TestDeleteNodeInList {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         ListNode res = sol.deleteNodeInList(head, head);
-        Assert.assertEquals(2, res.val);
+        Assertions.assertEquals(2, res.val);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class TestDeleteNodeInList {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         ListNode res = sol.deleteNodeInList(head, head.next.next.next.next);
-        Assert.assertNull(head.next.next.next.next);
+        Assertions.assertNull(head.next.next.next.next);
     }
 
     @Test
@@ -47,7 +47,7 @@ public class TestDeleteNodeInList {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         ListNode res = sol.deleteNodeInList(head, head.next.next);
-        Assert.assertEquals(4, head.next.next.val);
+        Assertions.assertEquals(4, head.next.next.val);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class TestDeleteNodeInList {
         DeleteNodeInList sol = new DeleteNodeInList();
         ListNode head = new ListNode(1);
         ListNode res = sol.deleteNodeInList(head, head);
-        Assert.assertNull(res);
+        Assertions.assertNull(res);
     }
 
     @Test
@@ -63,6 +63,6 @@ public class TestDeleteNodeInList {
         DeleteNodeInList sol = new DeleteNodeInList();
         ListNode head = null;
         ListNode res = sol.deleteNodeInList(head, head);
-        Assert.assertNull(res);
+        Assertions.assertNull(res);
     }
 }

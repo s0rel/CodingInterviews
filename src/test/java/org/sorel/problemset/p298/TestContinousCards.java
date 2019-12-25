@@ -1,7 +1,7 @@
 package org.sorel.problemset.p298;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestContinousCards {
     @Test
@@ -24,83 +24,83 @@ public class TestContinousCards {
     public void test01() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {1, 3, 2, 5, 4};
-        Assert.assertTrue(sol.isContinous(numbers));
+        Assertions.assertTrue(sol.isContinous(numbers));
     }
 
     @Test
     public void test02() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {1, 3, 2, 6, 4};
-        Assert.assertFalse(sol.isContinous(numbers));
+        Assertions.assertFalse(sol.isContinous(numbers));
     }
 
     @Test
     public void test03() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {0, 3, 2, 6, 4};
-        Assert.assertTrue(sol.isContinous(numbers));
+        Assertions.assertTrue(sol.isContinous(numbers));
     }
 
     @Test
     public void test04() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {0, 3, 1, 6, 4};
-        Assert.assertFalse(sol.isContinous(numbers));
+        Assertions.assertFalse(sol.isContinous(numbers));
     }
 
     @Test
     public void test05() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {1, 3, 0, 5, 0};
-        Assert.assertTrue(sol.isContinous(numbers));
+        Assertions.assertTrue(sol.isContinous(numbers));
     }
 
     @Test
     public void test06() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {1, 3, 0, 7, 0};
-        Assert.assertFalse(sol.isContinous(numbers));
+        Assertions.assertFalse(sol.isContinous(numbers));
     }
 
     @Test
     public void test07() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {1, 0, 0, 5, 0};
-        Assert.assertTrue(sol.isContinous(numbers));
+        Assertions.assertTrue(sol.isContinous(numbers));
     }
 
     @Test
     public void test08() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {1, 0, 0, 7, 0};
-        Assert.assertFalse(sol.isContinous(numbers));
+        Assertions.assertFalse(sol.isContinous(numbers));
     }
 
     @Test
     public void test09() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {3, 0, 0, 0, 0};
-        Assert.assertTrue(sol.isContinous(numbers));
+        Assertions.assertTrue(sol.isContinous(numbers));
     }
 
     @Test
     public void test10() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {0, 0, 0, 0, 0};
-        Assert.assertTrue(sol.isContinous(numbers));
+        Assertions.assertTrue(sol.isContinous(numbers));
     }
 
     @Test
     public void test11() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = {1, 0, 0, 1, 0};
-        Assert.assertFalse(sol.isContinous(numbers));
+        Assertions.assertFalse(sol.isContinous(numbers));
     }
 
     @Test
     public void test12() {
         ContinousCards sol = new ContinousCards();
         int[] numbers = null;
-        Assert.assertFalse(sol.isContinous(numbers));
+        Assertions.assertFalse(sol.isContinous(numbers));
     }
 }

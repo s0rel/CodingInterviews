@@ -1,7 +1,7 @@
 package org.sorel.problemset.p197;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class TestStringPermutation {
         StringPermutation sol = new StringPermutation();
         String org = "";
         List<String> res = sol.permutation(org);
-        Assert.assertNull(res);
+        Assertions.assertNull(res);
     }
 
     @Test

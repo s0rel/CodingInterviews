@@ -1,7 +1,7 @@
 package org.sorel.problemset.p134;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.sorel.structures.ListNode;
 
 public class TestKthNodeFromEnd {
@@ -22,7 +22,7 @@ public class TestKthNodeFromEnd {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        Assert.assertEquals(4, sol.kthNodeFromEnd(head, 2).val);
+        Assertions.assertEquals(4, sol.kthNodeFromEnd(head, 2).val);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class TestKthNodeFromEnd {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        Assert.assertEquals(5, sol.kthNodeFromEnd(head, 1).val);
+        Assertions.assertEquals(5, sol.kthNodeFromEnd(head, 1).val);
     }
 
     @Test
@@ -44,14 +44,14 @@ public class TestKthNodeFromEnd {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        Assert.assertEquals(1, sol.kthNodeFromEnd(head, 5).val);
+        Assertions.assertEquals(1, sol.kthNodeFromEnd(head, 5).val);
     }
 
     @Test
     public void test04() {
         KthNodeFromEnd sol = new KthNodeFromEnd();
         ListNode head = null;
-        Assert.assertNull(sol.kthNodeFromEnd(head, 100));
+        Assertions.assertNull(sol.kthNodeFromEnd(head, 100));
     }
 
     @Test
@@ -62,6 +62,6 @@ public class TestKthNodeFromEnd {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        Assert.assertNull(sol.kthNodeFromEnd(head, 6));
+        Assertions.assertNull(sol.kthNodeFromEnd(head, 6));
     }
 }

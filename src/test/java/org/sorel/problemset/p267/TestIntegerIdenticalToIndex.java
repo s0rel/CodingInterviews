@@ -1,7 +1,7 @@
 package org.sorel.problemset.p267;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestIntegerIdenticalToIndex {
     @Test
@@ -19,48 +19,48 @@ public class TestIntegerIdenticalToIndex {
     public void test01() {
         IntegerIdenticalToIndex sol = new IntegerIdenticalToIndex();
         int[] numbers = {-3, -1, 1, 3, 5};
-        Assert.assertEquals(3, sol.getNumberSameAsIndex(numbers));
+        Assertions.assertEquals(3, sol.getNumberSameAsIndex(numbers));
     }
 
     @Test
     public void test02() {
         IntegerIdenticalToIndex sol = new IntegerIdenticalToIndex();
         int[] numbers = {0, 1, 3, 5, 6};
-        Assert.assertEquals(0, sol.getNumberSameAsIndex(numbers));
+        Assertions.assertEquals(0, sol.getNumberSameAsIndex(numbers));
     }
 
     @Test
     public void test03() {
         IntegerIdenticalToIndex sol = new IntegerIdenticalToIndex();
         int[] numbers = {-1, 0, 1, 2, 4};
-        Assert.assertEquals(4, sol.getNumberSameAsIndex(numbers));
+        Assertions.assertEquals(4, sol.getNumberSameAsIndex(numbers));
     }
 
     @Test
     public void test04() {
         IntegerIdenticalToIndex sol = new IntegerIdenticalToIndex();
         int[] numbers = {-1, 0, 1, 2, 5};
-        Assert.assertEquals(-1, sol.getNumberSameAsIndex(numbers));
+        Assertions.assertEquals(-1, sol.getNumberSameAsIndex(numbers));
     }
 
     @Test
     public void test05() {
         IntegerIdenticalToIndex sol = new IntegerIdenticalToIndex();
         int[] numbers = {0};
-        Assert.assertEquals(0, sol.getNumberSameAsIndex(numbers));
+        Assertions.assertEquals(0, sol.getNumberSameAsIndex(numbers));
     }
 
     @Test
     public void test06() {
         IntegerIdenticalToIndex sol = new IntegerIdenticalToIndex();
         int[] numbers = {10};
-        Assert.assertEquals(-1, sol.getNumberSameAsIndex(numbers));
+        Assertions.assertEquals(-1, sol.getNumberSameAsIndex(numbers));
     }
 
     @Test
     public void test07() {
         IntegerIdenticalToIndex sol = new IntegerIdenticalToIndex();
         int[] numbers = null;
-        Assert.assertEquals(-1, sol.getNumberSameAsIndex(numbers));
+        Assertions.assertEquals(-1, sol.getNumberSameAsIndex(numbers));
     }
 }

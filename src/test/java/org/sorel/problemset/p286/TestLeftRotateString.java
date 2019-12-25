@@ -1,7 +1,8 @@
 package org.sorel.problemset.p286;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestLeftRotateString {
     @Test
@@ -9,30 +10,30 @@ public class TestLeftRotateString {
         LeftRotateString sol = new LeftRotateString();
         String str = "abcdefg";
         int i = 2;
-        Assert.assertEquals("cdefgab", sol.leftRotateString(str, i));
+        Assertions.assertEquals("cdefgab", sol.leftRotateString(str, i));
 
         str = "abcdefg";
         i = 1;
-        Assert.assertEquals("bcdefga", sol.leftRotateString(str, i));
+        Assertions.assertEquals("bcdefga", sol.leftRotateString(str, i));
 
         str = "abcdefg";
         i = 6;
-        Assert.assertEquals("gabcdef", sol.leftRotateString(str, i));
+        Assertions.assertEquals("gabcdef", sol.leftRotateString(str, i));
 
         str = null;
         i = 6;
-        Assert.assertNull(sol.leftRotateString(str, i));
+        Assertions.assertNull(sol.leftRotateString(str, i));
 
         str = "abcdefg";
         i = 0;
-        Assert.assertEquals("abcdefg", sol.leftRotateString(str, i));
+        Assertions.assertEquals("abcdefg", sol.leftRotateString(str, i));
 
         str = "abcdefg";
         i = 7;
-        Assert.assertEquals("abcdefg", sol.leftRotateString(str, i));
+        Assertions.assertEquals("abcdefg", sol.leftRotateString(str, i));
 
         str = "";
         i = 0;
-        Assert.assertEquals("", sol.leftRotateString(str, i));
+        Assertions.assertEquals("", sol.leftRotateString(str, i));
     }
 }
