@@ -21,10 +21,7 @@ public class SymmetricalBinaryTree {
             if (node1 == null && node2 == null) {
                 continue;
             }
-            if (node1 == null || node2 == null) {
-                return false;
-            }
-            if (node1.val != node2.val) {
+            if (node1 == null || node2 == null || node1.val != node2.val) {
                 return false;
             }
 

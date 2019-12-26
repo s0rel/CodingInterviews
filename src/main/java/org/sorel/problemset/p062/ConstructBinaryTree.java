@@ -9,7 +9,7 @@ import org.sorel.structures.TreeNode;
  */
 public class ConstructBinaryTree {
     public TreeNode constructBinaryTree(int[] pre, int[] in) {
-        if (pre == null || in == null || pre.length == 0 || in.length == 0 ||
+        if (pre == null || pre.length == 0 || in == null || in.length == 0 ||
                 pre.length != in.length) {
             return null;
         }

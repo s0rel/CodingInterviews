@@ -25,7 +25,6 @@ public class DclSingleton {
                 }
             }
         }
-
         return instance;
     }
 }

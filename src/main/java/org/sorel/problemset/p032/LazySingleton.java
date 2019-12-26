@@ -12,7 +12,6 @@ public class LazySingleton {
         if (instance == null) {
             instance = new LazySingleton();
         }
-
         return instance;
     }
 }

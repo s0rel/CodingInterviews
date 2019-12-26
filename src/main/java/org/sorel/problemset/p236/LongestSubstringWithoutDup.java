@@ -10,8 +10,7 @@ public class LongestSubstringWithoutDup {
         }
 
         Map<Character, Integer> map = new HashMap<>();
-        char[] charArray = str.toCharArray();
-        int res = 0, start = 0, len = charArray.length;
+        int res = 0, start = 0, len = str.length();
         for (int i = 0; i < len; i++) {
             if (map.containsKey(str.charAt(i))) {
                 start = Math.max(map.get(str.charAt(i)), start);

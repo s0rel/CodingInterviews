@@ -10,9 +10,9 @@ public class ContinuousSequenceWithSum {
             return res;
         }
 
-        int small = 1, big = 2, middle = sum >> 1;
+        int small = 1, big = 2, threshold = sum >> 1;
         int curSum = small + big;
-        while (small <= middle) {
+        while (small <= threshold) {
             if (curSum == sum) {
                 res.add(continousSequence(small, big));
                 big++;

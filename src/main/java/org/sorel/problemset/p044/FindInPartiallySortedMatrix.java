@@ -2,7 +2,7 @@ package org.sorel.problemset.p044;
 
 public class FindInPartiallySortedMatrix {
     public boolean searchIn2DArray(int[][] matrix, int num) {
-        if (matrix == null || matrix[0] == null || matrix.length == 0 || matrix[0].length == 0) {
+        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
             return false;
         }
 
