@@ -23,16 +23,16 @@ public class StackWithTwoQueues<T> {
     public T pop() {
         if (!queue2.isEmpty()) {
             int size = queue2.size();
-            for (int i = 0; i < size; i++) {
+            for (int i = 0; i < size - 1; i++) {
                 queue1.offer(queue2.poll());
             }
-            return queue1.poll();
+            return queue2.poll();
         } else if (!queue1.isEmpty()) {
             int size = queue1.size();
-            for (int i = 0; i < size; i++) {
+            for (int i = 0; i < size - 1; i++) {
                 queue2.offer(queue1.poll());
             }
-            return queue2.poll();
+            return queue1.poll();
         } else {
             return null;
         }
