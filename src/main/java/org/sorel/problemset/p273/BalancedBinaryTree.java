@@ -16,8 +16,7 @@ public class BalancedBinaryTree {
             return true;
         }
 
-        int[] left = new int[]{0};
-        int[] right = new int[]{0};
+        int[] left = {0}, right = {0};
         if (isBalanced(node.left, left) && isBalanced(node.right, right)) {
             int diff = left[0] - right[0];
             if (diff <= 1 && diff >= -1) {

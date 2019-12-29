@@ -2,7 +2,9 @@ package org.sorel.problemset.p233;
 
 public class MaxValueOfGifts {
     public int getMaxVaule(int[][] matrix) {
-        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return 0;
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return 0;
+        }
 
         int m = matrix.length, n = matrix[0].length;
         int[][] maxValue = new int[m][n];

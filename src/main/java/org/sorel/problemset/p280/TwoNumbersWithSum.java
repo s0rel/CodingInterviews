@@ -11,17 +11,17 @@ public class TwoNumbersWithSum {
         }
 
         int l = 0, r = arr.length - 1;
-        int curSum = arr[l] + arr[r];
-        while (curSum != sum && l < r) {
-            if (curSum > sum) {
+        int currSum = arr[l] + arr[r];
+        while (currSum != sum && l < r) {
+            if (currSum > sum) {
                 r--;
             } else {
                 l++;
             }
-            curSum = arr[l] + arr[r];
+            currSum = arr[l] + arr[r];
         }
 
-        if (curSum == sum) {
+        if (currSum == sum) {
             res.add(arr[l]);
             res.add(arr[r]);
         }

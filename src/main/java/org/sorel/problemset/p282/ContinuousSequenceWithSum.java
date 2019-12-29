@@ -11,17 +11,17 @@ public class ContinuousSequenceWithSum {
         }
 
         int small = 1, big = 2, threshold = sum >> 1;
-        int curSum = small + big;
+        int currSum = small + big;
         while (small <= threshold) {
-            if (curSum == sum) {
+            if (currSum == sum) {
                 res.add(continousSequence(small, big));
                 big++;
-                curSum += big;
-            } else if (curSum < sum) {
+                currSum += big;
+            } else if (currSum < sum) {
                 big++;
-                curSum += big;
+                currSum += big;
             } else {
-                curSum -= small;
+                currSum -= small;
                 small++;
             }
         }
