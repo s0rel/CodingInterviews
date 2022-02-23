@@ -1,6 +1,6 @@
 package org.sorel.problemset.p182;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

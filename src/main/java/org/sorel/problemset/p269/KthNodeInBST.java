@@ -1,6 +1,6 @@
 package org.sorel.problemset.p269;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

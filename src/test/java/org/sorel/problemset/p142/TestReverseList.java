@@ -2,7 +2,7 @@ package org.sorel.problemset.p142;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class TestReverseList {
     @Test

@@ -1,8 +1,8 @@
 package org.sorel.problemset.p275;
 
 /*
- * 由于两个数字肯定不一样，那么异或的结果肯定不为 0。在结果数字中找到第一个为 1 的位的位置，
- * 记为第 n 位。可以把第 n 位是不是 1 为标准把数组中的数字分成两个子数组。
+ * 由于两个数字肯定不一样，那么异或的结果肯定不为0。在结果数字中找到第一个为1的位的位置，
+ * 记为第n位。可以把第n位是不是1为标准把数组中的数字分成两个子数组。
  */
 public class NumbersAppearOnce {
     public int[] findNumsAppearOnce(int[] arr) {

@@ -2,7 +2,7 @@ package org.sorel.problemset.p145;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class TestMergeSortedLists {
     @Test

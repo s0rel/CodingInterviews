@@ -1,6 +1,6 @@
 package org.sorel.problemset.p145;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class MergeSortedLists {
     public ListNode merge(ListNode head1, ListNode head2) {

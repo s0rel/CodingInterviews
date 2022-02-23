@@ -1,8 +1,12 @@
 package org.sorel.problemset.p176;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
 
 public class PrintTreesInZigzag {
     public void printTreesInZigzag(TreeNode root) {

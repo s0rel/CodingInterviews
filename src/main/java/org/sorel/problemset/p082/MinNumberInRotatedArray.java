@@ -23,18 +23,4 @@ public class MinNumberInRotatedArray {
         }
         return arr[l];
     }
-
-    public int minNumber_(int[] arr) {
-        if (arr == null || arr.length == 0) {
-            return -1;
-        }
-
-        int len = arr.length;
-        for (int i = 0; i < len - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                return arr[i + 1];
-            }
-        }
-        return arr[0];
-    }
 }

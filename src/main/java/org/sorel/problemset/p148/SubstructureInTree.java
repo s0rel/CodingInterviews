@@ -1,6 +1,6 @@
 package org.sorel.problemset.p148;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 public class SubstructureInTree {
     public boolean hasSubtree(TreeNode root1, TreeNode root2) {

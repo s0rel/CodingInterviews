@@ -1,14 +1,24 @@
-package org.sorel.problemset.p039;
+package org.sorel.problemset.p041;
 
 public class DuplicationInArrayNoEdit {
+    /**
+     * 不保证找出所有重复的数字
+     */
     public int findDuplicateNumber(int[] arr) {
-        // 不保证找出所有重复的数字
         if (arr == null || arr.length == 0) {
             return -1;
         }
 
         int len = arr.length;
-        int l = 0, m = 0, r = len - 1, cnt = 0;
+
+        // 确保数组内的值都在允许的范围内
+        for (int i : arr) {
+            if (i < 1 || i > len) {
+                return -1;
+            }
+        }
+
+        int l = 1, m = 0, r = len - 1, cnt = 0;
 
         // [l, r] 实际就是重复数字所在的区间，因此循环的条件是 l <= r
         while (l <= r) {
@@ -31,10 +41,13 @@ public class DuplicationInArrayNoEdit {
         return -1;
     }
 
+    /**
+     * 统计数组 arr 内大于等于 l 且小于等于 r 的元素的数量
+     */
     private int counter(int[] arr, int l, int r) {
         int cnt = 0;
-        for (int n : arr) {
-            if (n >= l && n <= r) {
+        for (int i : arr) {
+            if (i >= l && i <= r) {
                 cnt++;
             }
         }

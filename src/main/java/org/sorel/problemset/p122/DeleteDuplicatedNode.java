@@ -1,6 +1,6 @@
 package org.sorel.problemset.p122;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class DeleteDuplicatedNode {
     public ListNode deleteDuplicatedNode(ListNode head) {

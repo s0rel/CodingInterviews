@@ -1,6 +1,6 @@
 package org.sorel.problemset.p273;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 public class BalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
@@ -16,7 +16,9 @@ public class BalancedBinaryTree {
             return true;
         }
 
-        int[] left = {0}, right = {0};
+        int[] left = {0};
+        int[] right = {0};
+
         if (isBalanced(node.left, left) && isBalanced(node.right, right)) {
             int diff = left[0] - right[0];
             if (diff <= 1 && diff >= -1) {

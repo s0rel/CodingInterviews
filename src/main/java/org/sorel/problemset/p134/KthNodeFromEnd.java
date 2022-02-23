@@ -1,6 +1,6 @@
 package org.sorel.problemset.p134;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class KthNodeFromEnd {
     public ListNode kthNodeFromEnd(ListNode head, int k) {

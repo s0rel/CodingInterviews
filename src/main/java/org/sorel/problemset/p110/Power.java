@@ -2,13 +2,14 @@ package org.sorel.problemset.p110;
 
 public class Power {
     public double power(double base, int exponent) {
-        if (base == 0.0) {
+        if (Double.compare(base, 0.0) == 0) {
             if (exponent == 0) {
                 return 1;
             } else {
                 return 0;
             }
         }
+
         if (exponent == 0) {
             return 1;
         }

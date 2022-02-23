@@ -1,6 +1,6 @@
 package org.sorel.problemset.p194;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 public class SerializeBinaryTrees {
     public String serialize(TreeNode root) {

@@ -1,6 +1,6 @@
 package org.sorel.problemset.p139;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 /*
  * 定义两个指针，同时从链表的头节点出发，一个指针一次走一步，另一个指针一次走两步。

@@ -2,7 +2,7 @@ package org.sorel.problemset.p273;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 public class TestBalancedBinaryTree {
     @Test

@@ -2,7 +2,7 @@ package org.sorel.problemset.p271;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 public class TestTreeDepth {
     @Test

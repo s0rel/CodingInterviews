@@ -1,6 +1,6 @@
 package org.sorel.problemset.p271;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

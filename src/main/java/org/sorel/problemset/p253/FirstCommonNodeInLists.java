@@ -1,6 +1,6 @@
 package org.sorel.problemset.p253;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 /*
  * 首先遍历两个链表得到它们的长度，就能知道哪个链表比较长，以及长的链表比短的链表

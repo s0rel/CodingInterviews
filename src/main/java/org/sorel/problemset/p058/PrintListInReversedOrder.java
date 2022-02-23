@@ -1,6 +1,6 @@
 package org.sorel.problemset.p058;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

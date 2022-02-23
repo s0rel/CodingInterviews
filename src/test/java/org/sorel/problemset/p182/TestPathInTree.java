@@ -1,7 +1,7 @@
 package org.sorel.problemset.p182;
 
 import org.junit.jupiter.api.Test;
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 public class TestPathInTree {
     @Test

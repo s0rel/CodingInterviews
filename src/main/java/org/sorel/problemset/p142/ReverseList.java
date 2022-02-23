@@ -1,6 +1,6 @@
 package org.sorel.problemset.p142;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class ReverseList {
     public ListNode reverseList(ListNode head) {

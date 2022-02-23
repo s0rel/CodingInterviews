@@ -1,4 +1,4 @@
-package org.sorel.structures;
+package org.sorel.structure;
 
 public class ListNode {
     public int val;

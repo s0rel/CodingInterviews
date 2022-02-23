@@ -1,6 +1,6 @@
 package org.sorel.problemset.p174;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 import java.util.Deque;
 import java.util.LinkedList;

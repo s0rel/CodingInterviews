@@ -1,6 +1,6 @@
 package org.sorel.problemset.p119;
 
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class DeleteNodeInList {
     public ListNode deleteNodeInList(ListNode head, ListNode node) {

@@ -1,6 +1,6 @@
 package org.sorel.problemset.p191;
 
-import org.sorel.structures.TreeNode;
+import org.sorel.structure.TreeNode;
 
 public class ConvertBinarySearchTree {
     public TreeNode convert(TreeNode root) {

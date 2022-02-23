@@ -12,6 +12,7 @@ public class RobotMove {
                 flag[i][j] = false;
             }
         }
+
         return movingCount(threshold, row, col, 0, 0, flag);
     }
 

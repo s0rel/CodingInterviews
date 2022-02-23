@@ -1,7 +1,7 @@
 package org.sorel.problemset.p122;
 
 import org.junit.jupiter.api.Test;
-import org.sorel.structures.ListNode;
+import org.sorel.structure.ListNode;
 
 public class TestDeleteDuplicatedNode {
     @Test

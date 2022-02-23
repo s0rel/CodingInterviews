@@ -1,5 +1,7 @@
 package org.sorel.problemset.p209;
 
+import org.sorel.util.CommonUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -92,9 +94,9 @@ public class KLeastNumbers {
             if (i >= j) {
                 break;
             }
-            swap(arr, i, j);
+            CommonUtils.swap(arr, i, j);
         }
-        swap(arr, l, j);
+        CommonUtils.swap(arr, l, j);
         return j;
     }
 

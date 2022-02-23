@@ -2,7 +2,8 @@ package org.sorel.problemset.p089;
 
 public class StringPathInMatrix {
     public boolean hasPath(char[][] matrix, String str) {
-        if (matrix == null || matrix.length == 0 || str == null || str.length() == 0) {
+        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0 ||
+                str == null || str.length() == 0) {
             return false;
         }
 
@@ -33,6 +34,7 @@ public class StringPathInMatrix {
         if (x < 0 || x >= row || y < 0 || y >= col) {
             return false;
         }
+
         boolean res = false;
         if (!flag[x][y] && matrix[x][y] == str.charAt(idx)) {
             flag[x][y] = true;
